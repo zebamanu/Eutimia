@@ -53,4 +53,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Aceptacion_Fin.unity
     guid: ccb703215e32c65468175f9fc3875dfa
+  - enabled: 1
+    path: Assets/Scenes/Tuto_Depresion.unity
+    guid: 079bdea46d5f2f64c9b659f54c2bc3f9
+  - enabled: 1
+    path: Assets/Scenes/Tuto_Ira.unity
+    guid: 9b285f18334e6a843b5dc8783f411f10
+  - enabled: 1
+    path: Assets/Scenes/Tuto_Nega.unity
+    guid: 36fa77fb3509e0f49b126478a9c37734
+  - enabled: 1
+    path: Assets/Scenes/Tuto_Negociacion.unity
+    guid: a8457e2076335674bb2ca6c5abe6ca5f
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 7a77fdb06c1fe1342b24d1eae3ebb099
   m_configObjects: {}

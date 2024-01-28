@@ -18,6 +18,13 @@ public class PalabraController : MonoBehaviour
         cursorOffset = new Vector2(mouseClick.width/2, mouseClick.height/2);
         animator = gameObject.GetComponent<Animator>();
         texto = gameObject.GetComponent<TMPro.TMP_Text>();
+        StartCoroutine(AutoDestroy());
+    }
+
+    IEnumerator AutoDestroy(){
+        yield return new WaitForSeconds(12);
+        PuntajeController.Instance.AgregarSegundos(3);
+        Destroy(gameObject);
     }
 
     public void SetTexto(string texto){

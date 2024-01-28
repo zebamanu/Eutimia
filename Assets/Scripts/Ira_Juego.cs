@@ -67,7 +67,6 @@ public class Ira_Juego : MonoBehaviour
             GameObject instancia = Instantiate(Baldosa, position, Quaternion.identity);
             float velocidad = posX < 0 ? speed : -speed;
             instancia.GetComponent<Rigidbody2D>().velocity = new Vector2(velocidad, 0);
-            Destroy(instancia, 8f);
             tiempo = 0;
         }
         if (tiempoTotal > 20){

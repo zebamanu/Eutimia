@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SiguienteController : MonoBehaviour
 {
     [SerializeField] RectTransform rect;
+    [SerializeField]
+    Texture2D mouseClick;
+    [SerializeField]
+    Texture2D mouseHit;
+
     // Start is called before the first frame update
     private float segundos = 0;
     private bool seMueve = true;
@@ -29,8 +34,16 @@ public class SiguienteController : MonoBehaviour
             segundos += Time.deltaTime;
             if (segundos >=45){
                 seMueve = false;
-                
+
             }
         }
+    }
+
+    void OnMouseEnter(){
+        Cursor.SetCursor(mouseClick, Vector2.zero, CursorMode.ForceSoftware);
+    }
+
+    public void OnMouseDown(){
+        Cursor.SetCursor(mouseHit, Vector2.zero, CursorMode.ForceSoftware);
     }
 }

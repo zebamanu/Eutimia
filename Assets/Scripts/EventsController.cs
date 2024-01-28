@@ -44,7 +44,7 @@ public class EventsController : MonoBehaviour
             int sceneId = SceneManager.GetActiveScene().buildIndex;
             Instance = this;
             Beleth = new Character("Beleth", perfilBeleth, audiosBeleth);
-            Protagonista = new Character("Protagonista", perfilProta, (sceneId < 4) ? audiosProta_1 : (sceneId < 7) ? audiosProta2 : (sceneId < 10) ? audiosProta3 : (sceneId < 13) ? audiosProta4 : audiosProta5);
+            Protagonista = new Character("Diana", perfilProta, (sceneId < 4) ? audiosProta_1 : (sceneId < 7) ? audiosProta2 : (sceneId < 10) ? audiosProta3 : (sceneId < 13) ? audiosProta4 : audiosProta5);
             Tarot = new Character("Kiki", perfilTarot, audiosKiki);
             Negociacion = new Character("Beleth", perfilNegociacion, audiosBeleth);
             Monstruo = new Character("????", perfilMonstruo, audiosMonstruo);
@@ -93,7 +93,7 @@ public class EventsController : MonoBehaviour
       DialogosController.Instance.StartDialogo();
     }
    void Evento7(){
-      SceneManager.LoadScene("Negacion_Juego");
+      SceneManager.LoadScene("Tuto_Nega");
     }
 
     void Evento8(){
@@ -167,7 +167,7 @@ public class EventsController : MonoBehaviour
     }
 
     void Evento20(){
-      SceneManager.LoadScene("Ira_Juego");
+      SceneManager.LoadScene("Tuto_Ira");
     }
 
     void Evento21(){
@@ -252,9 +252,11 @@ public class EventsController : MonoBehaviour
       DialogosController.Instance.StartDialogo();
     }
 
+    [SerializeField] AudioClip Tiriri;
     void Evento35(){
       //Hacer aparecer a la tarotista
       GameObject.FindWithTag("Kiki").GetComponent<SpriteRenderer>().enabled = true;
+      AudioController.Instance.ReproducirClip(Tiriri);
       string[] dialogo = {"Bienvenidos.", "Faber est suae quisque fortunae.", "#(El humano es artífice de su destino)"};
       DialogosController.Instance.SetDialogo(Tarot, dialogo, 36);
       DialogosController.Instance.StartDialogo();
@@ -302,7 +304,7 @@ public class EventsController : MonoBehaviour
     }
 
     void Evento43(){
-      SceneManager.LoadScene("Negociacion_Juego");
+      SceneManager.LoadScene("Tuto_Negociacion");
     }
 
     void Evento44(){
@@ -412,7 +414,7 @@ public class EventsController : MonoBehaviour
     }
 
     void Evento62(){
-      SceneManager.LoadScene("Depresion_Juego");
+      SceneManager.LoadScene("Tuto_Depresion");
     }
 
     void Evento63(){

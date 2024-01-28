@@ -164,10 +164,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe1b83f1886abe43af0e9eb381e200b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseCola: {fileID: 2800000, guid: cdb729cb5442b9a468f8d5d6f4ed7c4b, type: 3}
+  mouseCola: {fileID: 2800000, guid: 016844b634f3bab45899cb264604e490, type: 3}
   periodo: 3
   Fantasmas:
   - {fileID: 8275180362239491122, guid: a91510e295909f54e8c2560e84c71841, type: 3}
+  - {fileID: 8275180362239491122, guid: ca05ad9ab6198d64ab168feefe6b5c2b, type: 3}
+  - {fileID: 8275180362239491122, guid: 1431bee601f03b44b8a30cc2eebe69d6, type: 3}
+  - {fileID: 8275180362239491122, guid: 17848b4fc96f0f249859a1e01da232e5, type: 3}
+  - {fileID: 8275180362239491122, guid: 17db20b7a7baeb1448e6873926e066ec, type: 3}
+  - {fileID: 8275180362239491122, guid: 52a81a99579a2ed4799bb6badeae039a, type: 3}
 --- !u!1 &763044236
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +359,12 @@ PrefabInstance:
       propertyPath: m_PixelPerfect
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1981098701041828116, guid: 545bfb1b69c88694bb0b45f756900c42,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5ba246c71d5a6014ca09d1da40c4b177,
+        type: 3}
     - target: {fileID: 1981098701041828119, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -460,6 +471,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4401275327382109667, guid: 545bfb1b69c88694bb0b45f756900c42,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 17c8bd2ce7634ea4d8e03c913cb05323, type: 3}
     - target: {fileID: 6993717264684840596, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
       propertyPath: m_LocalScale.x

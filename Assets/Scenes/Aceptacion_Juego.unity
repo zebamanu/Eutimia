@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5a73e6f82bfbc43ad5f81e0ff7a7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseProta: {fileID: 2800000, guid: a69f4ab3eb00f6e48aee107e236c3287, type: 3}
+  mouseProta: {fileID: 2800000, guid: 4aad99a705c894c49873756fec398b91, type: 3}
 --- !u!1 &763044236
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +472,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4401275327382109667, guid: 545bfb1b69c88694bb0b45f756900c42,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 50eab3f201e4d7c4da930e936a3546f0, type: 3}
     - target: {fileID: 6993717264684840596, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -579,3 +584,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rect: {fileID: 1260950735}
+  mouseClick: {fileID: 2800000, guid: 3cdef2409edfe984e8beb25280a6e04f, type: 3}
+  mouseHit: {fileID: 2800000, guid: 4aad99a705c894c49873756fec398b91, type: 3}

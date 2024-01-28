@@ -338,7 +338,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -663,13 +663,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: b43e2afd38db9804586aa62c7ec09d63, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -744,10 +744,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perfilBeleth: {fileID: 2800000, guid: 4659b328c765c354cb5d4e57aa349f81, type: 3}
   audiosBeleth:
-  - {fileID: 8300000, guid: 001e18114408d854a9f57e42fea2deef, type: 3}
+  - {fileID: 8300000, guid: 276fb842145066644802fff832cf7021, type: 3}
+  - {fileID: 8300000, guid: 6afddbc10fc4c19449142a331f5e9643, type: 3}
+  - {fileID: 8300000, guid: ea0840f4221506f49b6e98ffd4bbebef, type: 3}
+  - {fileID: 8300000, guid: 9085ea60244f5e24b88368b83150f766, type: 3}
+  - {fileID: 8300000, guid: 5cc38f547613c8f49b78ac4363ca8024, type: 3}
+  - {fileID: 8300000, guid: 2d26fb8ff76c6b44a84f766a3d3ed9d5, type: 3}
   perfilProta: {fileID: 2800000, guid: 39e1a978eb9d15040bca5295e73ea847, type: 3}
   audiosProta_1:
-  - {fileID: 8300000, guid: 78912460bdb6a5944ae81ca6e2d0e218, type: 3}
+  - {fileID: 8300000, guid: 3b5cc920e3f82e543970b06316fd7087, type: 3}
   - {fileID: 8300000, guid: 1e115ae3470337e4188a22ed13fd9857, type: 3}
   - {fileID: 8300000, guid: cb0d91df587372d429ca82957c8860f3, type: 3}
   perfilTarot: {fileID: 0}
@@ -758,4 +763,14 @@ MonoBehaviour:
   perfilNegociacion: {fileID: 0}
   perfilMonstruo: {fileID: 2800000, guid: 374ca13575cd4ea41b2a615e9027d33b, type: 3}
   audiosMonstruo:
-  - {fileID: 8300000, guid: 488c47e491961a242a2dfe38b02e498b, type: 3}
+  - {fileID: 8300000, guid: 5db598b692c14c64abb647ee6d6b7cce, type: 3}
+  audiosProta2:
+  - {fileID: 8300000, guid: 7b447158e6c45eb40bf0c0c4a9109d8f, type: 3}
+  - {fileID: 8300000, guid: c8698b123f71db144813a49da2c38897, type: 3}
+  audiosProta3: []
+  Tiriri: {fileID: 0}
+  audiosProta4:
+  - {fileID: 8300000, guid: f6bff861b4316614a9c3fb978b17b21b, type: 3}
+  - {fileID: 8300000, guid: 7ba338fbe37944c419bdbe49eb282b75, type: 3}
+  audiosProta5:
+  - {fileID: 8300000, guid: 54e1ffe4738638c4c9c1898bc6c3da33, type: 3}

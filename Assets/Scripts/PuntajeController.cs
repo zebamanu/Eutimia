@@ -44,4 +44,9 @@ public class PuntajeController : MonoBehaviour
         tiempoCorre = true;
         siguienteEvento = siguiente;
     }
+
+    public void AgregarSegundos(int s){
+        tiempoActual += s;
+        if (tiempoActual > 80) tiempoActual = 80;
+    }
 }

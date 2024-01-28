@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseOver: {fileID: 2800000, guid: ae4c632af910dc3459754f065de159a9, type: 3}
   mouseClick: {fileID: 2800000, guid: cb6413b19b6108e4f9cdd27ebc384fa2, type: 3}
-  audio: {fileID: 8300000, guid: ecdb63a0803ca2a4d866b37e4c6b6556, type: 3}
+  audio: {fileID: 8300000, guid: fc53ec239392a96498182e2948b8cbe4, type: 3}
 --- !u!95 &3504148462185434450
 Animator:
   serializedVersion: 3

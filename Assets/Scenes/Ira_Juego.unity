@@ -457,6 +457,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4401275327382109667, guid: 545bfb1b69c88694bb0b45f756900c42,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cc39f1d8e9c7b154d88f90ecec397a2a, type: 3}
     - target: {fileID: 6993717264684840596, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
       propertyPath: m_LocalScale.x

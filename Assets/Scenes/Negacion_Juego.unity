@@ -184,6 +184,11 @@ PrefabInstance:
       propertyPath: mouseNO
       value: 
       objectReference: {fileID: 2800000, guid: 73d70ca9a2b1a90499baaffe6bd515d0, type: 3}
+    - target: {fileID: 4401275327382109667, guid: 545bfb1b69c88694bb0b45f756900c42,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f1e4bc33471967b44beb97af718a0d3b, type: 3}
     - target: {fileID: 6993717264684840596, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
       propertyPath: m_LocalScale.x

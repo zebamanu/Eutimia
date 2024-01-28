@@ -310,6 +310,11 @@ PrefabInstance:
       propertyPath: perfilMonstruo
       value: 
       objectReference: {fileID: 2800000, guid: 374ca13575cd4ea41b2a615e9027d33b, type: 3}
+    - target: {fileID: 4401275327382109667, guid: 545bfb1b69c88694bb0b45f756900c42,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6609f04b03940904ab2b38da0e167ef6, type: 3}
     - target: {fileID: 8092008735032695600, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
       propertyPath: m_PlayOnAwake

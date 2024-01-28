@@ -6,6 +6,9 @@ public class FantasmaController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
+
+    [SerializeField]
+    private Sprite muerto;
     public int vidas = 2;
 
      Vector2 cursorOffset;
@@ -16,6 +19,14 @@ public class FantasmaController : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         rb.velocity = (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position).normalized * 3;
+    }
+
+    void Update(){
+        if (Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position, transform.position) < 1){
+            PuntajeController.Instance.AgregarSegundos(5);
+            
+            Destroy(gameObject);
+        }
     }
 
     private bool fueTocado = false;
@@ -35,6 +46,7 @@ public class FantasmaController : MonoBehaviour
             Cursor.SetCursor(mouseHit, cursorOffset, CursorMode.ForceSoftware);
             if (--vidas <= 0){
                 animator.SetTrigger("Die");
+                GetComponent<SpriteRenderer>().sprite = muerto;
                 rb.velocity = Vector2.zero;
                 Destroy(gameObject, 1f);
             }

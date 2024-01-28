@@ -16,6 +16,13 @@ public class BaldosaController : MonoBehaviour
         cursorOffset = new Vector2(mouseClick.width/2, mouseClick.height/2);
         rb = gameObject.GetComponent<Rigidbody2D>();
         sr = gameObject.GetComponent<SpriteRenderer>();
+        StartCoroutine(AutoDestroy());
+    }
+
+    IEnumerator AutoDestroy(){
+        yield return new WaitForSeconds(10);
+        PuntajeController.Instance.AgregarSegundos(5);
+        Destroy(gameObject);
     }
 
     [SerializeField] AudioClip[] audios;

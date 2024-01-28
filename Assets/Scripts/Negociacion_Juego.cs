@@ -65,24 +65,25 @@ public class Negociacion_Juego : MonoBehaviour
     [SerializeField]
     private float periodo = 3;
     [SerializeField]
-    private GameObject[] Cartas = null;
+    private GameObject Prefab = null;
+    [SerializeField]
+    private Sprite[] Cartas = null;
     void Update(){
         tiempo += Time.deltaTime;
         tiempoTotal += Time.deltaTime;
         if (tiempo >= periodo){
             float posX = Random.Range(-8f, 8f);
             float posY = Random.Range(-1.2f, 4f);
-            GameObject Carta = Cartas[Random.Range(0,Cartas.Length)];
             Vector3 position = new Vector3(posX, posY, 0);
-            GameObject instancia = Instantiate(Carta, position, Quaternion.identity);
-            Destroy(instancia, 8f);
+            GameObject instancia = Instantiate(Prefab, position, Quaternion.identity);
+            instancia.GetComponent<CartaController>().SetDorso(Cartas[Random.Range(0, Cartas.Length)]);
             tiempo = 0;
         }
         if (tiempoTotal > 20){
             periodo = 1;
         }
         if (tiempoTotal > 40){
-            periodo = 0.5f;
+            periodo = 0.75f;
         }
     }
 }

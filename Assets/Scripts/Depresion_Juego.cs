@@ -38,7 +38,7 @@ public class Depresion_Juego : MonoBehaviour
             periodo = 1;
         }
         if (tiempoTotal > 40){
-            periodo = 0.5f;
+            periodo = 0.75f;
         }
     }
 }
