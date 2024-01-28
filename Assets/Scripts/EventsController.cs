@@ -16,11 +16,15 @@ public class EventsController : MonoBehaviour
     [SerializeField]
     private Texture perfilNegociacion = null;
         
+    [SerializeField]
+    private Texture perfilMonstruo = null;
     public Character Beleth;
     public Character Protagonista;
     public Character Tarot;
 
     public Character Negociacion;
+
+    public Character Monstruo;
 
     void Awake()
     {
@@ -34,6 +38,7 @@ public class EventsController : MonoBehaviour
             Protagonista = new Character("Protagonista", perfilProta);
             Tarot = new Character("Kiki", perfilTarot);
             Negociacion = new Character("Beleth", perfilNegociacion);
+            Monstruo = new Character("????", perfilMonstruo);
          }
     }
 
@@ -335,7 +340,67 @@ public class EventsController : MonoBehaviour
 
     void Evento52(){
       string[] dialogo = {"*¡BELETH!"};
-      DialogosController.Instance.SetDialogo(Protagonista, dialogo, -1);
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 53);
       DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento53(){
+      SceneManager.LoadScene("Depresion_Intro");
+    }
+
+    void Evento54(){
+      string[] dialogo = {"Ay Beleth, no sé si tiene sentido esto…"};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 55);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento55(){
+      string[] dialogo = {"¿Hablarle a un gato? Yyyy… no es muy normalito que digamos."};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 56);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento56(){
+      string[] dialogo = {"Creo que nunca lo voy a poder superar. Es demasiado para mí."};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 57);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento57(){
+      string[] dialogo = {"Es bromis, ¿No?"};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 58);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento58(){
+      string[] dialogo = {"No puedo más, me rindo."};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 59);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento59(){
+      string[] dialogo = {"No puede ser…"};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 60);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento60(){
+      string[] dialogo = {"*UAAAARGH *Ruido de bicho feo*"};
+      DialogosController.Instance.SetDialogo(Monstruo, dialogo, 61);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento61(){
+      string[] dialogo = {"Yo me encargo de esto."};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 62);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento62(){
+      SceneManager.LoadScene("Depresion_Juego");
+    }
+
+    void Evento63(){
+      SceneManager.LoadScene("Depresion_Fin");
     }
 }

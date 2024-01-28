@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ira_Fin.unity
     guid: 108d6b9a6a17aa040922a2eea31d31d2
+  - enabled: 1
+    path: Assets/Scenes/Negociacion_Intro.unity
+    guid: dc7d244597ac54b48be713e8ba6d5dfe
+  - enabled: 1
+    path: Assets/Scenes/Negociacion_Juego.unity
+    guid: 0107f5061cf4dec479e3c46faf13e905
+  - enabled: 1
+    path: Assets/Scenes/Negociacion_Fin.unity
+    guid: 5fbea7e2cd582b642963ccd5266a6b7c
   m_configObjects: {}

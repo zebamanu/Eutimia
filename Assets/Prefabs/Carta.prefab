@@ -66,8 +66,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a89a904d6af66441a0d098cedfa0883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseClick: {fileID: 2800000, guid: 122a548fc2471bf4d856902e27fdff57, type: 3}
-  mouseHit: {fileID: 2800000, guid: 7123a62bb1b636044a2aa05807a41b25, type: 3}
+  mouseClick: {fileID: 2800000, guid: 8afc32262ae7a754a89a3d30155a43be, type: 3}
+  mouseHit: {fileID: 2800000, guid: c3245a2eae21ec54fb09834826b61897, type: 3}
 --- !u!61 &6657097372811652130
 BoxCollider2D:
   m_ObjectHideFlags: 0

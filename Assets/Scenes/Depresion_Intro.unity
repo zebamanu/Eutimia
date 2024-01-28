@@ -121,87 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &786378407
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 786378408}
-  - component: {fileID: 786378409}
-  m_Layer: 0
-  m_Name: Tarotista
-  m_TagString: Kiki
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &786378408
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786378407}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01666673, y: -1.08, z: 0}
-  m_LocalScale: {x: 0.14678998, y: 0.15197179, z: 0.33333334}
-  m_Children: []
-  m_Father: {fileID: 1751648952}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &786378409
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786378407}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1599947295
-  m_SortingLayer: 1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e53c8111c7bcefd4fb6e571f5ab90b36, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 10.24, y: 10.24}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1208531979
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,36 +224,16 @@ PrefabInstance:
       propertyPath: m_PixelPerfect
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1981098701041828119, guid: 545bfb1b69c88694bb0b45f756900c42,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 1981098701282888659, guid: 545bfb1b69c88694bb0b45f756900c42,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1981098701282888659, guid: 545bfb1b69c88694bb0b45f756900c42,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1981098701282888659, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ef12180bb6330794583eab79b5ac0ee6,
+      objectReference: {fileID: 21300000, guid: adf91bd1213f9ec4fa051c80dd58e2d8,
         type: 3}
     - target: {fileID: 1981098701282888659, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1981098701767721261, guid: 545bfb1b69c88694bb0b45f756900c42,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.33
       objectReference: {fileID: 0}
     - target: {fileID: 2657194067375305577, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
@@ -401,16 +300,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2657194069025009887, guid: 545bfb1b69c88694bb0b45f756900c42,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2657194069276889860, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3321668812093681090, guid: 545bfb1b69c88694bb0b45f756900c42,
+        type: 3}
+      propertyPath: perfilMonstruo
+      value: 
+      objectReference: {fileID: 2800000, guid: 374ca13575cd4ea41b2a615e9027d33b, type: 3}
     - target: {fileID: 8092008735032695600, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
       propertyPath: m_PlayOnAwake
@@ -419,7 +318,7 @@ PrefabInstance:
     - target: {fileID: 8690494422401474336, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8869167939689407614, guid: 545bfb1b69c88694bb0b45f756900c42,
         type: 3}
@@ -478,12 +377,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 545bfb1b69c88694bb0b45f756900c42, type: 3}
---- !u!4 &1751648952 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1981098701282888658, guid: 545bfb1b69c88694bb0b45f756900c42,
-    type: 3}
-  m_PrefabInstance: {fileID: 1751648951}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2050998125
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +471,7 @@ GameObject:
   - component: {fileID: 2070506119}
   - component: {fileID: 2070506118}
   m_Layer: 0
-  m_Name: Negociacion_Juego
+  m_Name: Depresion_Intro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,13 +486,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2070506117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faa6c4020046d494bb71121aa2c50131, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a64206bcbfbfe64a8a552645a024e82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseMano: {fileID: 2800000, guid: a69f4ab3eb00f6e48aee107e236c3287, type: 3}
-  periodo: 3
-  Cartas:
-  - {fileID: 2117283757925775198, guid: 8c9a60b30ca2b494295b8b305d65bd87, type: 3}
 --- !u!4 &2070506119
 Transform:
   m_ObjectHideFlags: 0
