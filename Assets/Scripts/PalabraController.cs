@@ -28,8 +28,9 @@ public class PalabraController : MonoBehaviour
         Cursor.SetCursor(mouseOver, cursorOffset, CursorMode.ForceSoftware);
     }
 
+    [SerializeField] AudioClip audio;
     public void OnMouseDown(){
-        AudioController.Instance.ReproducirAudio(0);
+        AudioController.Instance.ReproducirClip(audio);
         Cursor.SetCursor(mouseClick, cursorOffset, CursorMode.ForceSoftware);
         animator.SetTrigger("destroy");
         Destroy(gameObject, 1);

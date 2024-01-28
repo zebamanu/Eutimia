@@ -15,6 +15,7 @@ public class AudioController : MonoBehaviour
          else
          {
             Instance = this;
+            DontDestroyOnLoad(this.gameObject);
             audioSource = GetComponent<AudioSource>();
          }
     }
@@ -24,5 +25,9 @@ public class AudioController : MonoBehaviour
 
     public void ReproducirAudio(int id){
         audioSource.PlayOneShot(audios[id],1);
+    }
+
+    public void ReproducirClip(AudioClip audioClip){
+        audioSource.PlayOneShot(audioClip, 1);
     }
 }

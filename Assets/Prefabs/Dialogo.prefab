@@ -743,4 +743,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   perfilBeleth: {fileID: 2800000, guid: 4659b328c765c354cb5d4e57aa349f81, type: 3}
+  audiosBeleth:
+  - {fileID: 8300000, guid: 001e18114408d854a9f57e42fea2deef, type: 3}
   perfilProta: {fileID: 2800000, guid: 39e1a978eb9d15040bca5295e73ea847, type: 3}
+  audiosProta_1:
+  - {fileID: 8300000, guid: 78912460bdb6a5944ae81ca6e2d0e218, type: 3}
+  - {fileID: 8300000, guid: 1e115ae3470337e4188a22ed13fd9857, type: 3}
+  - {fileID: 8300000, guid: cb0d91df587372d429ca82957c8860f3, type: 3}
+  perfilTarot: {fileID: 0}
+  audiosKiki:
+  - {fileID: 8300000, guid: 4609a3e81058a624dac7940b26645942, type: 3}
+  - {fileID: 8300000, guid: 48dbc56f6c9628f4b9adbd2306ce5fb2, type: 3}
+  - {fileID: 8300000, guid: eba314b2cf6779e4f95324ccdb85af2c, type: 3}
+  perfilNegociacion: {fileID: 0}
+  perfilMonstruo: {fileID: 2800000, guid: 374ca13575cd4ea41b2a615e9027d33b, type: 3}
+  audiosMonstruo:
+  - {fileID: 8300000, guid: 488c47e491961a242a2dfe38b02e498b, type: 3}

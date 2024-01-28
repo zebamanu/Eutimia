@@ -18,8 +18,9 @@ public class BaldosaController : MonoBehaviour
         sr = gameObject.GetComponent<SpriteRenderer>();
     }
 
+    [SerializeField] AudioClip[] audios;
     public void OnMouseDown(){
-        AudioController.Instance.ReproducirAudio(0);
+        AudioController.Instance.ReproducirClip(audios[Random.Range(0, audios.Length)]);
         Cursor.SetCursor(mouseHit, cursorOffset, CursorMode.ForceSoftware);
         rb.velocity = Vector2.zero;
         sr.sprite = baldosaRota;

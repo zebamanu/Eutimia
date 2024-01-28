@@ -27,6 +27,7 @@ public class DialogosController : MonoBehaviour
          else
          {
             Instance = this;
+            DontDestroyOnLoad(this.gameObject);
          }
     }
 
@@ -34,12 +35,15 @@ public class DialogosController : MonoBehaviour
 
     private string[] dialogo;
     private int indiceActual;
+
+    private AudioClip[] audios;
     public void SetDialogo(Character personaje, string[] dialogo, int idEvento){
       this.tNombre.text = personaje.Nombre;
       this.dialogo = dialogo;
       this.indiceActual = 0;
       this.iPerfil.texture = personaje.Perfil;
       this.idEvento = idEvento;
+      this.audios = personaje.sonidos;
     }
 
     
@@ -52,6 +56,7 @@ public class DialogosController : MonoBehaviour
     public void AvanzarDialogo(){
       if (this.indiceActual < dialogo.Length){
         this.tDialogo.text = dialogo[indiceActual];
+        AudioController.Instance.ReproducirClip(this.audios[Random.Range(0, this.audios.Length)]);
         if (tDialogo.text[0] == '*'){
           tDialogo.fontStyle = TMPro.FontStyles.Bold;
           tDialogo.text = tDialogo.text.Substring(1, tDialogo.text.Length - 1);

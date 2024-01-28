@@ -1,8 +1,6 @@
-﻿using System;
+﻿
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Video;
 
 public class FantasmaController : MonoBehaviour
 {
@@ -29,10 +27,11 @@ public class FantasmaController : MonoBehaviour
         fueTocado = false;
     }
 
+    [SerializeField] AudioClip[] audios;
     public void OnMouseDown(){
         if (!fueTocado){
             fueTocado = true;
-            AudioController.Instance.ReproducirAudio(0);
+            AudioController.Instance.ReproducirClip(audios[Random.Range(0, audios.Length)]);
             Cursor.SetCursor(mouseHit, cursorOffset, CursorMode.ForceSoftware);
             if (--vidas <= 0){
                 animator.SetTrigger("Die");

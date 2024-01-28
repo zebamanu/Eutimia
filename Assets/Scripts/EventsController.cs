@@ -9,15 +9,23 @@ public class EventsController : MonoBehaviour
     [SerializeField]
     private Texture perfilBeleth = null;
     [SerializeField]
+    AudioClip[] audiosBeleth = null;
+    [SerializeField]
     private Texture perfilProta = null;
     [SerializeField]
+    AudioClip[] audiosProta_1 = null;
+    [SerializeField]
     private Texture perfilTarot = null;
+    [SerializeField]
+    AudioClip[] audiosKiki = null;
 
     [SerializeField]
     private Texture perfilNegociacion = null;
         
     [SerializeField]
     private Texture perfilMonstruo = null;
+    [SerializeField]
+    AudioClip[] audiosMonstruo = null;
     public Character Beleth;
     public Character Protagonista;
     public Character Tarot;
@@ -33,12 +41,13 @@ public class EventsController : MonoBehaviour
          }
          else
          {
+            int sceneId = SceneManager.GetActiveScene().buildIndex;
             Instance = this;
-            Beleth = new Character("Beleth", perfilBeleth);
-            Protagonista = new Character("Protagonista", perfilProta);
-            Tarot = new Character("Kiki", perfilTarot);
-            Negociacion = new Character("Beleth", perfilNegociacion);
-            Monstruo = new Character("????", perfilMonstruo);
+            Beleth = new Character("Beleth", perfilBeleth, audiosBeleth);
+            Protagonista = new Character("Protagonista", perfilProta, (sceneId < 4) ? audiosProta_1 : (sceneId < 7) ? audiosProta2 : (sceneId < 10) ? audiosProta3 : (sceneId < 13) ? audiosProta4 : audiosProta5);
+            Tarot = new Character("Kiki", perfilTarot, audiosKiki);
+            Negociacion = new Character("Beleth", perfilNegociacion, audiosBeleth);
+            Monstruo = new Character("????", perfilMonstruo, audiosMonstruo);
          }
     }
 
@@ -121,7 +130,9 @@ public class EventsController : MonoBehaviour
       DialogosController.Instance.StartDialogo();
     }
 
+    [SerializeField] AudioClip[] audiosProta2;
     void Evento14(){
+      Protagonista.sonidos = audiosProta2;
       SceneManager.LoadScene("Ira_Intro");
     }
 
@@ -193,7 +204,9 @@ public class EventsController : MonoBehaviour
       DialogosController.Instance.StartDialogo();
     }
 
+    [SerializeField] AudioClip[] audiosProta3;
     void Evento27(){
+      Protagonista.sonidos = audiosProta3;
       SceneManager.LoadScene("Negociacion_Intro");
     }
 
@@ -344,7 +357,9 @@ public class EventsController : MonoBehaviour
       DialogosController.Instance.StartDialogo();
     }
 
+    [SerializeField] AudioClip[] audiosProta4;
     void Evento53(){
+      Protagonista.sonidos = audiosProta4;
       SceneManager.LoadScene("Depresion_Intro");
     }
 
@@ -402,5 +417,137 @@ public class EventsController : MonoBehaviour
 
     void Evento63(){
       SceneManager.LoadScene("Depresion_Fin");
+    }
+
+    void Evento64(){
+      string[] dialogo = {"Ya está.", "Bichos asquerosos, no molesten."};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 65);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento65(){
+      string[] dialogo = {"¿Qué pasó?"};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 66);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento66(){
+      string[] dialogo = {"Nada, ¿No era el mejor día de tu vida?"};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 67);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento67(){
+      string[] dialogo = {"Vos… ¿Me protegiste?"};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 68);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento68(){
+      string[] dialogo = {"A fin de cuentas, te tengo un poco de cariño.", "Por más de que no entienda el drama, no podría dejarte sola en un momento así."};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 69);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento69(){
+      string[] dialogo = {"¡Ay Beleth, muchas gracias!"};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 70);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento70(){
+      string[] dialogo = {"Sí, sí, sí. A otra cosa, mariposa."};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 71);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    [SerializeField] AudioClip[] audiosProta5;
+    void Evento71(){
+      Protagonista.sonidos = audiosProta5;
+      SceneManager.LoadScene("Aceptacion_Intro");
+    }
+
+    void Evento72(){
+      string[] dialogo = {"Quizás haya exagerado un poco."};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 73);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento73(){
+      string[] dialogo = {"¿Un poco nada más?"};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 74);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento74(){
+      string[] dialogo = {"Hay que aceptar que las cosas pasan, y punto."};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 75);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento75(){
+      string[] dialogo = {"Ya era hora.", "¿Lo aceptás?"};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 76);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento76(){
+      SceneManager.LoadScene("Aceptacion_Juego");
+    }
+
+    void Evento77(){
+      SceneManager.LoadScene("Aceptacion_Fin");
+    }
+
+    void Evento78(){
+      string[] dialogo = {"Sí, lo acepto."};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 79);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento79(){
+      string[] dialogo = {"¡Muy bieeeen! Costó, pero lo aceptaste. No fue fácil, ¿no?"};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 80);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento80(){
+      string[] dialogo = {"La verdad que no, el duelo es una montaña rusa de emociones."};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 81);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento81(){
+      string[] dialogo = {"Me dí cuenta.", "Nunca voy a terminar de entender las emociones humanas.", "Disfrutá de tu eutimia, esperemos que dure más esta vez."};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 82);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento82(){
+      string[] dialogo = {"Que así sea."};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 83);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento83(){
+      string[] dialogo = {"Tanto drama por haberte tropezado con una baldosa floja y que se te haya caído el helado al piso. Increíble."};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 84);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento84(){
+      string[] dialogo = {"¿Y si compramos otro?"};
+      DialogosController.Instance.SetDialogo(Protagonista, dialogo, 85);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento85(){
+      string[] dialogo = {"Obvio bobis."};
+      DialogosController.Instance.SetDialogo(Beleth, dialogo, 86);
+      DialogosController.Instance.StartDialogo();
+    }
+
+    void Evento86(){
+      SceneManager.LoadScene("Creditos");
     }
 }

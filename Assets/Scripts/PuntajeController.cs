@@ -31,7 +31,10 @@ public class PuntajeController : MonoBehaviour
             if (tiempoActual <= 0){
                 //TerminaDesafio
                 Cursor.SetCursor(null, Vector2.zero, CursorMode.ForceSoftware);
-                EventsController.Instance.StartEvent(siguienteEvento);
+                if (siguienteEvento != -1)
+                    EventsController.Instance.StartEvent(siguienteEvento);
+                tiempoActual = 0;
+                tiempoCorre = false;
             }
         }
     }

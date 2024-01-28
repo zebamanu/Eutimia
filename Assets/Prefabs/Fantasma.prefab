@@ -165,5 +165,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidas: 2
+  audios:
+  - {fileID: 8300000, guid: 001e18114408d854a9f57e42fea2deef, type: 3}
+  - {fileID: 8300000, guid: d8d5514e83e8da9488fc91436a393d7d, type: 3}
+  - {fileID: 8300000, guid: 36c508e27bb46084cb210843dc3d28cd, type: 3}
+  - {fileID: 8300000, guid: acb5c324b9112f243bcad403bc603de6, type: 3}
   mouseClick: {fileID: 2800000, guid: 122a548fc2471bf4d856902e27fdff57, type: 3}
   mouseHit: {fileID: 2800000, guid: 7123a62bb1b636044a2aa05807a41b25, type: 3}
